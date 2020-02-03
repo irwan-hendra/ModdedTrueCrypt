@@ -1,0 +1,1 @@
+cmd_/root/Documents/truecrypt-4.3a-source-code/Linux/Kernel/truecrypt.ko := ld -m elf_i386 -m elf_i386 -r -o /root/Documents/truecrypt-4.3a-source-code/Linux/Kernel/truecrypt.ko /root/Documents/truecrypt-4.3a-source-code/Linux/Kernel/truecrypt.o /root/Documents/truecrypt-4.3a-source-code/Linux/Kernel/truecrypt.mod.o

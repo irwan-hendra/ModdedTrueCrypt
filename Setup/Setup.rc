@@ -1,0 +1,197 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+#include "..\\common\\resource.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 4,3,1,0
+ PRODUCTVERSION 4,3,1,0
+ FILEFLAGSMASK 0x37L
+#ifdef _DEBUG
+ FILEFLAGS 0x21L
+#else
+ FILEFLAGS 0x20L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904b0"
+        BEGIN
+            VALUE "CompanyName", "TrueCrypt Foundation"
+            VALUE "FileDescription", "TrueCrypt Setup"
+            VALUE "FileVersion", "4.3a"
+            VALUE "LegalCopyright", "TrueCrypt Foundation"
+            VALUE "LegalTrademarks", "TrueCrypt"
+            VALUE "OriginalFilename", "TrueCrypt Setup.exe"
+            VALUE "ProductName", "TrueCrypt"
+            VALUE "ProductVersion", "4.3a"
+            VALUE "SpecialBuild", "2007-05-03"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// HEADER
+//
+
+IDR_SETUP_RSRC_HEADER   HEADER                  "resource.h"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// REGISTRY
+//
+
+IDR_COMREG              REGISTRY                "ComSetup.rgs"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_UNINSTALL DIALOGEX 0, 0, 349, 234
+STYLE DS_SETFONT | DS_SETFOREGROUND | DS_3DLOOK | DS_FIXEDSYS | DS_CENTER | WS_MINIMIZEBOX | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Uninstall TrueCrypt"
+CLASS "CustomDlg"
+FONT 8, "MS Shell Dlg", 0, 0, 0x0
+BEGIN
+    LTEXT           "Uninstall TrueCrypt fr&om:",IDT_UNINSTALL_DIR,8,10,166,8
+    EDITTEXT        IDC_DESTINATION,7,21,277,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "&Browse...",IDC_BROWSE,292,21,50,14
+    LISTBOX         IDC_FILES,7,44,335,159,LBS_NOINTEGRALHEIGHT | LBS_NOSEL | WS_VSCROLL
+    DEFPUSHBUTTON   "&Uninstall",IDC_UNINSTALL,236,213,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,292,213,50,14
+END
+
+IDD_INSTALL DIALOGEX 0, 0, 393, 258
+STYLE DS_SETFONT | DS_SETFOREGROUND | DS_3DLOOK | DS_FIXEDSYS | DS_CENTER | WS_MINIMIZEBOX | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "TrueCrypt Setup"
+CLASS "CustomDlg"
+FONT 8, "MS Shell Dlg", 0, 0, 0x0
+BEGIN
+    EDITTEXT        IDC_DESTINATION,74,172,242,13,ES_AUTOHSCROLL
+    PUSHBUTTON      "&Browse...",IDC_BROWSE,322,171,50,14
+    CONTROL         "Install for all users",IDC_ALL_USERS,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,13,191,168,10
+    CONTROL         "Associate '.tc' file &extension with TrueCrypt",IDC_FILE_TYPE,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,187,197,194,10
+    CONTROL         "Add TrueCrypt to &Start menu",IDC_PROG_GROUP,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,13,203,168,10
+    CONTROL         "Create System &Restore point",IDC_SYSTEM_RESTORE,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,187,209,194,10
+    CONTROL         "Add TrueCrypt icon to &desktop",IDC_DESKTOP_ICON,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,13,215,168,11
+    DEFPUSHBUTTON   "&Install",IDC_INSTALL,279,238,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,336,238,50,14
+    RTEXT           "Install &to:",IDT_INSTALL_DIR,6,174,66,8
+    EDITTEXT        IDC_LICENSE,6,6,381,84,ES_MULTILINE | ES_READONLY | WS_VSCROLL | NOT WS_TABSTOP
+    LISTBOX         IDC_FILES,6,95,381,60,LBS_NOINTEGRALHEIGHT | LBS_DISABLENOSCROLL | LBS_NOSEL | WS_VSCROLL
+    GROUPBOX        "Installation Options",IDT_INSTALL_OPTIONS,6,158,381,74
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDI_SETUP               ICON                    "Setup.ico"
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "#include ""..\\\\common\\\\resource.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#include ""..\\\\common\\\\common.rc""\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_UNINSTALL, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 342
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 229
+    END
+
+    IDD_INSTALL, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 386
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 253
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#include "..\\common\\common.rc"
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
